@@ -5,7 +5,7 @@ import random
 import dash
 import dash_bootstrap_components as dbc
 from dash import html
-from dash import dcc
+from dash import  dcc
 
 from dash.dependencies import Input, Output, State
 
@@ -24,8 +24,8 @@ random.seed(42)
 class Viz:
     def __init__(self, data_directory):
         self.color_range = [0, 1]
-        bike_filename = os.path.join(data_directory, "bike.vtp")
-        tunnel_filename = os.path.join(data_directory, "tunnel.vtu")
+        bike_filename = "bike.vtp"
+        tunnel_filename = "tunnel.vtu"
 
         # Seeds settings
         self.resolution = 10
